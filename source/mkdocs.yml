@@ -1,2 +1,12 @@
-site_name: My Docs
+site_name: Лабораторная 3
 site_dir: '../docs'
+
+theme:
+  name: material
+  language: ru  # Интерфейс (поиск, кнопки) на русском
+  features:
+    - navigation.tabs  # Верхнее меню вместо бокового
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy # Кнопка копирования кода
