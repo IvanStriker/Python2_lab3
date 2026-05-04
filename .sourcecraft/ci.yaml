@@ -1,0 +1,15 @@
+on:
+  push:
+    - workflows: [deploy-site]
+      filter:
+        branches: [main]
+
+workflows:
+  deploy-site:
+    tasks:
+      - name: check_site
+        cubes:
+          - name: check_site_cube
+            script:
+              - echo "Checking site files..."
+              - ls -la docs/
